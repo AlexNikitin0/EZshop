@@ -32,7 +32,7 @@ public class ShoppingCartController{
     public ShoppingCart getCart(Principal principal) {
         try {
             if (principal != null) {
-                System.out.println("good");
+
 
                 String userName = principal.getName();
 
@@ -40,7 +40,7 @@ public class ShoppingCartController{
                 User user = userDao.getByUserName(userName);
                 int userId = user.getId();
 
-                System.out.println("good2");
+
                 return shoppingCartDao.getByUserId(userId);
             } else {
                 System.out.println("error before catch");

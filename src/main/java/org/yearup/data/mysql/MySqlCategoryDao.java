@@ -44,7 +44,7 @@ public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao
             e.printStackTrace();
         }
 
-        System.out.println("All Categories");
+
         return categories;
     }
 
